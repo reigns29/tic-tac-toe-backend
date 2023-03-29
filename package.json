@@ -1,0 +1,20 @@
+{
+  "name": "redis-socketio-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "set \"NODE_ENV=development\" && nodemon server.js",
+    "preview": "set \"NODE_ENV=preview\" && nodemon server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "debug": "ndb server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "redis": "^4.6.5",
+    "socket.io": "^4.6.1",
+    "uuid": "^9.0.0"
+  }
+}
